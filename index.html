@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>GifTastic!</title>
 </head>
 <body>
+    <div id="button-container">
     <div id="buttons-view"></div>
-    
+    <!-- <button type="button" id="buttons-view" class="btn btn-primary">Primary</button> -->
+    </div>
 
     <form id="gif-form">
-        <label for="gif-input">Make your own Gif button</label>
+        <label for="gif-input" class="button-color">Make your own Gif button</label>
         <input type="text" id="gif-input">
         <br>
   
         
-        <input id="add-gif" type="submit" value="Make your own Gif button">
+        <input id="add-gif" type="submit" class="btn btn-primary button-color" value="GIF!">
       </form>
       <div id="gifs-here"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

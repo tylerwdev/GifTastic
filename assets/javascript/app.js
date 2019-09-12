@@ -1,4 +1,4 @@
-var topics = ['Mario', 'Legend of Zelda', 'Metroid', 'Mega Man', 'Resident Evil', 'Final Fantasy']
+var topics = ['Avatar the Last Airbender', 'Aang', 'Katara', 'Sokka', 'Toph', 'FireLord Ozai', 'Appa Avatar', 'Uncle Iroh']
 
 function renderButtons() {
     $('#buttons-view').empty();
@@ -7,7 +7,9 @@ function renderButtons() {
        var gifButton = $('<button>');
         gifButton.attr("data-gif", topics[i]);
         gifButton.text(topics[i]);
-        gifButton.addClass("gifGetter")
+        gifButton.addClass("gifGetter");
+        gifButton.addClass('btn btn-primary');
+        gifButton.addClass('button-color');
         $('#buttons-view').append(gifButton);
     }
 }
@@ -57,6 +59,7 @@ $('#add-gif').on('click', function (event) {
     topics.push(gif);
 
     renderButtons();
+    // $('#gif-input')[0].reset();
 })
 
 $(document).on('click', '.gif', function () {

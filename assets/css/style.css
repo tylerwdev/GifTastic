@@ -1,0 +1,18 @@
+.button-color {
+    background-color: #02efee;
+    border-color: 	#0400f8;
+    color: black;
+}
+
+body {
+    background-image: url(../images/avatar_background.jpg);
+    background-size: repeat;
+}
+
+/* #button-container {
+    background-color: #0C8D01;
+    width: 75%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+} */
